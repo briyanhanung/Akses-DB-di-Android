@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageFakultasActivity">
+
+    <LinearLayout
+        app:layout_editor_absoluteX="63dp"
+        app:layout_editor_absoluteY="8dp"
+        android:layout_width="397dp"
+        android:orientation="vertical"
+        android:layout_height="660dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/txt_idfakultas"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible"
+            android:ems="10"
+            android:hint="Id Fakultas"
+            />
+
+        <EditText
+            android:id="@+id/txt_kodefakultas"
+            android:ems="10"
+            android:hint="Kode Fakultas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/txt_namafakultas"
+            android:ems="10"
+            android:hint="Nama Fakultas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_marginTop="6dp"
+            android:text="TAMBAH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_marginTop="6dp"
+            android:text="UBAH"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_marginTop="6dp"
+            android:text="HAPUS"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
